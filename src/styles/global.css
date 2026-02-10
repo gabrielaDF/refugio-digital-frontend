@@ -1,0 +1,38 @@
+/* Reset + tipografía global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, Holiday, sans-serif;
+}
+
+/* Base de medidas */
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+body {
+  background-color: var(--gris-fondo);
+  color: var(--negro);
+  line-height: 1.5;
+}
+
+/* Enlaces */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Botones base */
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+/* Imágenes */
+img {
+  max-width: 100%;
+  display: block;
+}
