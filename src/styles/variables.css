@@ -1,0 +1,14 @@
+:root {
+  /* 🎨 Paleta oficial del proyecto */
+  --azul-oscuro: #22566c;
+  --azul-claro: #2c9cd6;
+  --naranja: #f47a23;
+  --marron: #b45b14;
+  --azul-agua: #0cc0df;
+
+  /* Neutros */
+  --gris-fondo: #f4f4f4;
+  --gris: #808080;
+  --blanco: #ffffff;
+  --negro: #000000;
+}
