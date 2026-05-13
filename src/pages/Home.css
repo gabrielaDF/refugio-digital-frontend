@@ -1,0 +1,329 @@
+.home {
+  background: #e8e8e8;
+  min-height: 100vh;
+  font-family: sans-serif;
+}
+
+/* HERO */
+
+.hero {
+  position: relative;
+  height: 400px;
+  background-image: url("https://res.cloudinary.com/dn6wibef0/image/upload/v1761692532/refugio%20digital/portada_refugio_digital_hthzv3.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.Parrafo-1 {
+    font-size: medium;
+    }
+
+.hero-content {
+  position: relative;
+  z-index: 10;
+  color: white;
+  padding: 0 60px;
+  max-width: 700px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.hero-content h2 {
+  font-size: 4rem;
+  font-weight: 800;
+  color: #f28c28;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  margin-bottom: 25px;
+  line-height: 1.5;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.btn-orange {
+  background: #f28c28;
+  color: white;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: large;
+}
+
+.btn-orange:hover {
+  background: #d97410;
+}
+
+.btn-outline {
+  background: transparent;
+  color: white;
+  border: 1px solid #f28c28;
+  padding: 12px 22px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: large;
+}
+
+/* SABIAS */
+
+.sabias {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  padding: 80px 60px;
+  flex-wrap: wrap;
+}
+
+.sabias-text {
+  max-width: 550px;
+}
+
+.sabias-text h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.sabias-text p {
+  font-size: medium;
+  margin-bottom: 20px;
+}
+
+.btn-blog {
+  border: 1px solid black;
+  padding: 12px 20px;
+  border-radius: 30px;
+  background: white;
+  cursor: pointer;
+  font-size: medium;
+}
+
+.sabias-img img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* ADOPCIONES */
+
+.adopciones {
+  position: relative;
+  background-image: url("https://res.cloudinary.com/dn6wibef0/image/upload/v1761692536/refugio%20digital/perros_y_gatos_snxfql.png");
+  background-size: cover;
+  background-position: center;
+  padding: 100px 60px;
+}
+
+.adopciones-content {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.adopciones-title h2 {
+  font-size: 4rem;
+  color: white;
+  max-width: 450px;
+}
+
+.line {
+  width: 180px;
+  height: 4px;
+  background: #f28c28;
+  margin-top: 15px;
+}
+
+.cards {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  width: 220px;
+  padding: 30px;
+  border-radius: 25px;
+  text-align: center;
+}
+
+
+.emoji {
+  font-size: 5rem;
+  margin-bottom: 20px;
+}
+
+.gato-img {
+    width: 130px;
+    margin-left: 10%;
+    }
+
+.card h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* VIDEO */
+
+.video-section {
+  padding: 80px 60px;
+  text-align: center;
+}
+
+.video-section h2 {
+  font-size: 3rem;
+  margin-bottom: 40px;
+}
+
+.video-container {
+  background: black;
+  height: 400px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.play-btn {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: none;
+  background: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* AYUDA */
+
+.ayuda {
+  padding: 80px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.ayuda-images {
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+  position: relative;
+}
+
+.circle {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  width: 70px;
+  height: 70px;
+  background: gray;
+  border-radius: 50%;
+}
+
+.img-small {
+  width: 170px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.img-big {
+  width: 170px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.ayuda-content h2 {
+  font-size: 3rem;
+  margin-bottom: 30px;
+}
+
+.help-buttons {
+  display: flex;
+  gap: 50px;
+  flex-wrap:nowrap ;
+}
+
+.help-card {
+  border: none;
+  width: 200px;
+  cursor: pointer;
+}
+
+.botonesdyr {
+    width: 100%;
+
+    }
+
+.help-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.icon {
+  font-size: 4rem;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+  .hero-content {
+    padding: 0 25px;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content h2 {
+    font-size: 3rem;
+  }
+
+  .sabias,
+  .adopciones-content,
+  .ayuda {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .adopciones-title h2 {
+    font-size: 2.5rem;
+  }
+
+  .video-section h2,
+  .ayuda-content h2,
+  .sabias-text h2 {
+    font-size: 2.3rem;
+  }
+
+  .cards,
+  .help-buttons {
+    justify-content: center;
+  }
+}
