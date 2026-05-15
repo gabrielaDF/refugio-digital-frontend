@@ -86,26 +86,24 @@ export default function Home() {
         <h2>¿Qué es Refugio Digital?</h2>
 
         <div className="video-container">
-          <button className="play-btn">▶</button>
+          <video controls>
+        <source src="https://youtu.be/so9FXn5vZS4?si=bQIIFiNgXrDoXb47" type="video/mp4" />
+        Tu navegador no soporta videos.
+      </video>
+
         </div>
       </section>
 
       {/* AYUDA */}
       <section className="ayuda">
         <div className="ayuda-images">
-          <div className="circle"></div>
 
           <img
-            src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?q=80&w=600&auto=format&fit=crop"
-            alt="Perro"
-            className="img-small"
-          />
-
-          <img
-            src="https://images.unsplash.com/photo-1517849845537-4d257902454a?q=80&w=600&auto=format&fit=crop"
+            src="https://res.cloudinary.com/dn6wibef0/image/upload/v1778808006/foto_decoracion_kp9u01.png"
             alt="Perro"
             className="img-big"
           />
+
         </div>
 
         <div className="ayuda-content">
@@ -114,12 +112,12 @@ export default function Home() {
           <div className="help-buttons">
             <button className="help-card">
 
-              <div className="icon"><img className="botonesdyr" src="https://res.cloudinary.com/dn6wibef0/image/upload/v1761692527/refugio%20digital/reportar_icono_jvfl2l.png" alt="reportarimg" /></div>
+              <div><img className="botonesdyr" src="https://res.cloudinary.com/dn6wibef0/image/upload/v1761692527/refugio%20digital/reportar_icono_jvfl2l.png" alt="reportarimg" /></div>
             </button>
 
             <button className="help-card">
 
-              <div className="icon"><img className="botonesdyr" src="https://res.cloudinary.com/dn6wibef0/image/upload/v1761692505/refugio%20digital/donar_icono_tsqvya.png" alt="donarimg" /></div>
+              <div><img className="botonesdyr" src="https://res.cloudinary.com/dn6wibef0/image/upload/v1761692505/refugio%20digital/donar_icono_tsqvya.png" alt="donarimg" /></div>
             </button>
           </div>
         </div>
