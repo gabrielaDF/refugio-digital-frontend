@@ -2,18 +2,20 @@
   background: #e8e8e8;
   min-height: 100vh;
   font-family: sans-serif;
+  overflow-x: hidden;
 }
 
 /* HERO */
 
 .hero {
   position: relative;
-  height: 400px;
+  min-height: 500px;
   background-image: url("https://res.cloudinary.com/dn6wibef0/image/upload/v1761692532/refugio%20digital/portada_refugio_digital_hthzv3.png");
   background-size: cover;
   background-position: center;
   display: flex;
   align-items: center;
+  padding: 40px 0;
 }
 
 .overlay {
@@ -23,24 +25,26 @@
 }
 
 .Parrafo-1 {
-    font-size: medium;
-    }
+  font-size: 1.5rem;
+}
 
 .hero-content {
   position: relative;
   z-index: 10;
   color: white;
-  padding: 0 60px;
-  max-width: 700px;
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+  padding: 0 clamp(20px, 5vw, 80px);
 }
 
 .hero-content h1 {
-  font-size: 3rem;
+  font-size: clamp(2rem, 4vw, 3.5rem);
   font-weight: bold;
 }
 
 .hero-content h2 {
-  font-size: 4rem;
+  font-size: clamp(2.5rem, 6vw, 5rem);
   font-weight: 800;
   color: #f28c28;
   margin-bottom: 20px;
@@ -48,7 +52,8 @@
 
 .hero-content p {
   margin-bottom: 25px;
-  line-height: 1.5;
+  line-height: 1.7;
+  max-width: 650px;
 }
 
 .hero-buttons {
@@ -65,7 +70,8 @@
   border-radius: 8px;
   cursor: pointer;
   font-weight: bold;
-  font-size: large;
+  font-size: 1.2rem;
+  transition: 0.3s;
 }
 
 .btn-orange:hover {
@@ -79,32 +85,43 @@
   padding: 12px 22px;
   border-radius: 8px;
   cursor: pointer;
-  font-size: large;
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+
+.btn-outline:hover {
+  background: #f28c28;
 }
 
 /* SABIAS */
 
 .sabias {
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  gap: 40px;
-  padding: 80px 60px;
+  gap: clamp(40px, 8vw, 140px);
+  padding: clamp(50px, 8vw, 100px) clamp(20px, 5vw, 80px);
   flex-wrap: wrap;
 }
 
 .sabias-text {
+  flex: 1;
+  min-width: 300px;
   max-width: 550px;
 }
 
 .sabias-text h2 {
-  font-size: 3rem;
+  font-size: clamp(2rem, 5vw, 3.5rem);
   margin-bottom: 20px;
 }
 
 .sabias-text p {
-  font-size: medium;
-  margin-bottom: 20px;
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  line-height: 1.7;
 }
 
 .btn-blog {
@@ -113,12 +130,25 @@
   border-radius: 30px;
   background: white;
   cursor: pointer;
-  font-size: medium;
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+
+.btn-blog:hover {
+  background: black;
+  color: white;
+}
+
+.sabias-img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  min-width: 280px;
 }
 
 .sabias-img img {
-  width: 300px;
-  height: 300px;
+  width: clamp(240px, 25vw, 350px);
+  height: clamp(240px, 25vw, 350px);
   object-fit: cover;
   border-radius: 50%;
 }
@@ -130,23 +160,32 @@
   background-image: url("https://res.cloudinary.com/dn6wibef0/image/upload/v1761692536/refugio%20digital/perros_y_gatos_snxfql.png");
   background-size: cover;
   background-position: center;
-  padding: 100px 60px;
+  padding: clamp(60px, 8vw, 120px) clamp(20px, 5vw, 80px);
 }
 
 .adopciones-content {
   position: relative;
   z-index: 10;
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  gap: 40px;
+  gap: clamp(40px, 8vw, 140px);
   flex-wrap: wrap;
 }
 
+.adopciones-title {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+}
+
 .adopciones-title h2 {
-  font-size: 4rem;
+  font-size: clamp(2.2rem, 5vw, 4.5rem);
   color: white;
-  max-width: 450px;
 }
 
 .line {
@@ -160,6 +199,7 @@
   display: flex;
   gap: 25px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .card {
@@ -168,19 +208,38 @@
   padding: 30px;
   border-radius: 25px;
   text-align: center;
+  transition: 0.3s;
 }
 
+.card:hover {
+  transform: translateY(-5px);
+}
 
 .emoji {
-  font-size: 5rem;
+  width: 100%;
+  height: 140px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   margin-bottom: 20px;
 }
 
-.gato-img {
-    width: 130px;
-    margin-left: 10%;
-    }
+.emoji img {
+  max-width: 100%;
+  object-fit: contain;
+}
 
+/* Tamaños individuales */
+
+.perro-img {
+  width: 140px;
+}
+
+.gato-img {
+  width: 120px;
+}
 .card h3 {
   font-size: 2rem;
   margin-bottom: 20px;
@@ -189,102 +248,108 @@
 /* VIDEO */
 
 .video-section {
-  padding: 80px 60px;
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+  padding: clamp(60px, 8vw, 100px);
   text-align: center;
 }
 
 .video-section h2 {
-  font-size: 3rem;
+  font-size: clamp(2rem, 5vw, 3.5rem);
   margin-bottom: 40px;
 }
 
 .video-container {
-  background: black;
   width: 100%;
-  height: 100vh;
+  aspect-ratio: 16/9;
+  border-radius: 20px;
   overflow: hidden;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background: black;
 }
 
-.contenedor video {
+.video-container iframe,
+.video-container video {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  display: block;
-  }
+  border: none;
+}
 
 /* AYUDA */
 
 .ayuda {
-  padding: 80px 60px;
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+
+  padding: clamp(60px, 8vw, 100px) clamp(20px, 5vw, 80px);
+
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  gap: 50px;
+
+  gap: clamp(40px, 8vw, 140px);
+
   flex-wrap: wrap;
 }
 
 .ayuda-images {
+  flex: 1;
   display: flex;
-  align-items: flex-end;
-  gap: 20px;
-  position: relative;
+  justify-content: center;
+  min-width: 300px;
 }
 
-
 .img-big {
-  width: auto;
-  height: 500px;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
   object-fit: cover;
 }
 
+.ayuda-content {
+  flex: 1;
+  min-width: 300px;
+  max-width: 550px;
+}
+
 .ayuda-content h2 {
-  font-size: 3rem;
-  margin-bottom: 30px;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin-bottom: 40px;
 }
 
 .help-buttons {
   display: flex;
-  gap: 50px;
-  flex-wrap:nowrap ;
+  gap: 30px;
+  flex-wrap: wrap;
 }
 
 .help-card {
   border: none;
   width: 200px;
   cursor: pointer;
+  background: transparent;
+  transition: 0.3s;
+}
+
+.help-card:hover {
+  transform: scale(1.05);
 }
 
 .botonesdyr {
-    width: 100%;
-
-    }
-
-.help-card h3 {
-  font-size: 1.8rem;
-  margin-bottom: 20px;
-}
-
-.icon {
-  font-size: 4rem;
+  width: 100%;
+  display: block;
 }
 
 /* RESPONSIVE */
 
-@media (max-width: 768px) {
-  .hero-content {
-    padding: 0 25px;
+@media (max-width: 992px) {
+  .hero {
+    text-align: center;
   }
 
-  .hero-content h1 {
-    font-size: 2rem;
-  }
-
-  .hero-content h2 {
-    font-size: 3rem;
+  .hero-buttons {
+    justify-content: center;
   }
 
   .sabias,
@@ -294,18 +359,58 @@
     text-align: center;
   }
 
-  .adopciones-title h2 {
-    font-size: 2.5rem;
+  .line {
+    margin: 15px auto 0;
   }
 
-  .video-section h2,
-  .ayuda-content h2,
-  .sabias-text h2 {
-    font-size: 2.3rem;
-  }
-
-  .cards,
-  .help-buttons {
+  .help-buttons,
+  .cards {
     justify-content: center;
+  }
+
+  .hero-content p {
+    margin-inline: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: 600px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .help-card {
+    width: 160px;
+  }
+
+  .video-container {
+    aspect-ratio: 16/10;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-orange,
+  .btn-outline,
+  .btn-blog {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .help-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .help-card {
+    width: 200px;
   }
 }
