@@ -62,7 +62,13 @@ export default function Home() {
           <div className="cards">
             {/* PERROS */}
             <div className="card">
-              <div className="emoji"><img src="https://res.cloudinary.com/dn6wibef0/image/upload/v1761869165/refugio%20digital/icono_perro_s4ancd.png" alt="Perro" /></div>
+              <div className="emoji">
+                <img
+                  className="perro-img"
+                  src="https://res.cloudinary.com/dn6wibef0/image/upload/v1761869165/refugio%20digital/icono_perro_s4ancd.png"
+                  alt="Perro"
+                />
+              </div>
 
               <h3>Perros</h3>
 
@@ -71,7 +77,13 @@ export default function Home() {
 
             {/* GATOS */}
             <div className="card">
-              <div className="emoji"><img className="gato-img" src="https://res.cloudinary.com/dn6wibef0/image/upload/v1761869164/refugio%20digital/icono_gato_aqoxs4.png" alt="gato" /></div>
+              <div className="emoji">
+                <img
+                  className="gato-img"
+                  src="https://res.cloudinary.com/dn6wibef0/image/upload/v1761869164/refugio%20digital/icono_gato_aqoxs4.png"
+                  alt="gato"
+                />
+              </div>
 
               <h3>Gatos</h3>
 
@@ -87,23 +99,23 @@ export default function Home() {
 
         <div className="video-container">
           <video controls>
-        <source src="https://youtu.be/so9FXn5vZS4?si=bQIIFiNgXrDoXb47" type="video/mp4" />
-        Tu navegador no soporta videos.
-      </video>
-
+            <source
+              src="https://youtu.be/so9FXn5vZS4?si=bQIIFiNgXrDoXb47"
+              type="video/mp4"
+            />
+            Tu navegador no soporta videos.
+          </video>
         </div>
       </section>
 
       {/* AYUDA */}
       <section className="ayuda">
         <div className="ayuda-images">
-
           <img
             src="https://res.cloudinary.com/dn6wibef0/image/upload/v1778808006/foto_decoracion_kp9u01.png"
             alt="Perro"
             className="img-big"
           />
-
         </div>
 
         <div className="ayuda-content">
@@ -111,13 +123,23 @@ export default function Home() {
 
           <div className="help-buttons">
             <button className="help-card">
-
-              <div><img className="botonesdyr" src="https://res.cloudinary.com/dn6wibef0/image/upload/v1761692527/refugio%20digital/reportar_icono_jvfl2l.png" alt="reportarimg" /></div>
+              <div>
+                <img
+                  className="botonesdyr"
+                  src="https://res.cloudinary.com/dn6wibef0/image/upload/v1761692527/refugio%20digital/reportar_icono_jvfl2l.png"
+                  alt="reportarimg"
+                />
+              </div>
             </button>
 
             <button className="help-card">
-
-              <div><img className="botonesdyr" src="https://res.cloudinary.com/dn6wibef0/image/upload/v1761692505/refugio%20digital/donar_icono_tsqvya.png" alt="donarimg" /></div>
+              <div>
+                <img
+                  className="botonesdyr"
+                  src="https://res.cloudinary.com/dn6wibef0/image/upload/v1761692505/refugio%20digital/donar_icono_tsqvya.png"
+                  alt="donarimg"
+                />
+              </div>
             </button>
           </div>
         </div>
