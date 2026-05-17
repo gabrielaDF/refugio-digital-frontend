@@ -1,0 +1,143 @@
+:root {
+  --azul-oscuro: #22566c;
+  --azul-claro: #2c9cd6;
+  --naranja: #f47a23;
+  --gris: #808080;
+  --blanco: #ffffff;
+}
+ 
+/* FOOTER */
+.footer {
+  background-color: var(--gris);
+  color: var(--blanco);
+  padding: 3rem 2rem 1rem;
+  margin-top: 4rem;
+}
+ 
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+ 
+/* LOGO */
+.footer-logo {
+  flex: 1;
+  min-width: 250px;
+}
+ 
+.footer-logo img {
+  width: 80px;
+  margin-bottom: 1rem;
+}
+ 
+.footer-logo h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+ 
+.footer-texto {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+ 
+/* REDES */
+.footer-redes {
+  flex: 1;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+ 
+.footer-redes h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--naranja);
+}
+ 
+.footer-redes a {
+  text-decoration: none;
+  color: var(--blanco);
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+ 
+.footer-redes a:hover {
+  color: var(--naranja);
+  transform: translateX(5px);
+}
+ 
+/* CONTACTO */
+.footer-contacto {
+  flex: 1;
+  min-width: 220px;
+}
+ 
+.footer-contacto h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--naranja);
+}
+ 
+.footer-contacto p {
+  margin-bottom: 0.8rem;
+  font-size: 1.2rem;
+}
+ 
+/* COPYRIGHT */
+.footer-copy {
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  margin-top: 2rem;
+  padding-top: 1rem;
+}
+ 
+.footer-copy p {
+  font-size: 1.2rem;
+}
+ 
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+ 
+  .footer-redes {
+    align-items: center;
+  }
+ 
+  .footer-logo img {
+    width: 70px;
+  }
+}
+
+/* Elimina espacios blancos generales */
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+ 
+/* Evita separación entre secciones */
+main {
+  margin: 0;
+  padding: 0;
+}
+ 
+/* Sección antes del footer */
+.ayuda-section {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+ 
+/* Footer */
+.footer {
+  margin-top: 0;
+  padding-top: 2rem;
+}
