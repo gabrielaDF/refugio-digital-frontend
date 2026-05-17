@@ -36,8 +36,8 @@ function Header() {
         <Link to="/reportes" onClick={() => setMenuAbierto(false)}>
           Reportes
         </Link>
-        <Link to="/historias" onClick={() => setMenuAbierto(false)}>
-          Historias
+        <Link to="/Acerca de" onClick={() => setMenuAbierto(false)}>
+          Acerca de
         </Link>
       </nav>
     </header>

@@ -98,13 +98,17 @@ export default function Home() {
         <h2>¿Qué es Refugio Digital?</h2>
 
         <div className="video-container">
-          <video controls>
-            <source
-              src="https://youtu.be/so9FXn5vZS4?si=bQIIFiNgXrDoXb47"
-              type="video/mp4"
-            />
-            Tu navegador no soporta videos.
-          </video>
+          <iframe
+            width="1000"
+            height="700"
+            src="https://www.youtube.com/embed/so9FXn5vZS4?si=ZzvB3PQ-9T6kKwDn"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+          Tu navegador no soporta videos.
         </div>
       </section>
 
