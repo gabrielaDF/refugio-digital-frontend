@@ -1,4 +1,4 @@
-import "./CardMascota.css";
+import "./cardMascota.css";
 
 function CardMascota({ mascota }) {
   return (
