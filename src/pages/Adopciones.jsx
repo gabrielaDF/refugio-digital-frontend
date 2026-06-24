@@ -1,5 +1,5 @@
 import "./Adopciones.css";
-import CardMascota from "../components/cardMascota/CardMascota";
+import CardMascota from "../components/cardMascota/cardMascota";
 
 const mascotas = [
   {
@@ -143,7 +143,7 @@ function Adopciones() {
           <p>
             ¡Tenemos a algunos amigos que de seguro estarán felices a tu lado!
           </p>
-          <br/>
+          <br />
           <p>
             En esta sección encontrarás información más detallada de cada uno de
             nuestros animalitos.
