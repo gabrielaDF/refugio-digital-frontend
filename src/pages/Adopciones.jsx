@@ -169,7 +169,7 @@ function Adopciones() {
 
       <section className="pets-container">
         {mascotas.map((mascota) => (
-          <cardMascota key={mascota.id} mascota={mascota} />
+          <CardMascota key={mascota.id} mascota={mascota} />
         ))}
       </section>
     </div>

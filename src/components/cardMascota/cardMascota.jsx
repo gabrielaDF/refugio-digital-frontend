@@ -1,6 +1,6 @@
 import "./cardMascota.css";
 
-function cardMascota({ mascota }) {
+function CardMascota({ mascota }) {
   return (
     <div className="pet-card">
       <img src={mascota.imagen} alt={mascota.nombre} />
@@ -21,4 +21,4 @@ function cardMascota({ mascota }) {
   );
 }
 
-export default cardMascota;
+export default CardMascota;
