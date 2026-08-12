@@ -1,0 +1,472 @@
+/* =========================================
+   PÁGINA DE REPORTES
+========================================= */
+
+.reportes-page {
+  width: 100%;
+  min-height: 100vh;
+  background: #eef1f4;
+}
+
+/* =========================================
+   CARRUSEL
+========================================= */
+
+.reportes-slider {
+  position: relative;
+  width: 100%;
+  height: 540px;
+
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: center;
+
+  overflow: hidden;
+}
+
+/* Capa sobre la imagen */
+
+.slider-overlay {
+  position: absolute;
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.3);
+
+  z-index: 1;
+}
+
+/* Primer slide */
+
+.slide-ver-reportes .slider-overlay {
+  background: rgba(255, 255, 255, 0.6);
+}
+
+/* =========================================
+   CONTENIDO DEL SLIDE
+========================================= */
+
+.slider-content {
+  position: relative;
+
+  z-index: 2;
+
+  width: 700px;
+
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+.slider-content h1 {
+  font-size: 64px;
+
+  font-weight: 800;
+
+  margin: 0 0 20px;
+
+  color: #20252b;
+}
+
+.slider-content p {
+  font-size: 25px;
+
+  line-height: 1.45;
+
+  margin: 0 auto 25px;
+
+  max-width: 800px;
+
+  color: #111;
+}
+
+/* =========================================
+   SEGUNDO SLIDE - REPORTA
+========================================= */
+
+.slide-reporta .slider-content {
+  width: 600px;
+
+  margin-left: 11%;
+  margin-right: 0;
+
+  text-align: left;
+}
+
+.slide-reporta .slider-content h1 {
+  color: white;
+
+  font-size: 64px;
+}
+
+.slide-reporta .slider-content p {
+  color: white;
+
+  font-size: 21px;
+
+  max-width: 620px;
+}
+
+/* =========================================
+   LÍNEA DEL PRIMER SLIDE
+========================================= */
+
+.slider-line {
+  width: 200px;
+
+  height: 1px;
+
+  background: #999;
+
+  margin: 0 auto 25px;
+}
+
+/* =========================================
+   BOTÓN
+========================================= */
+
+.btn-reportes {
+  border: none;
+
+  background: #f47a23;
+
+  color: white;
+
+  font-weight: 700;
+
+  padding: 11px 18px;
+
+  font-size: 16px;
+
+  border-radius: 6px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.btn-reportes:hover {
+  background: #d96515;
+
+  transform: translateY(-2px);
+}
+
+/* =========================================
+   FLECHAS
+========================================= */
+
+.slider-arrow {
+  position: absolute;
+
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  z-index: 3;
+
+  background: transparent;
+
+  border: none;
+
+  color: white;
+
+  font-size: 45px;
+
+  cursor: pointer;
+
+  padding: 10px 25px;
+}
+
+.slider-arrow-left {
+  left: 20px;
+}
+
+.slider-arrow-right {
+  right: 20px;
+}
+
+.slider-arrow:hover {
+  transform: translateY(-50%) scale(1.15);
+}
+
+/* =========================================
+   INDICADORES
+========================================= */
+
+.slider-indicators {
+  position: absolute;
+
+  bottom: 30px;
+
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  display: flex;
+
+  gap: 6px;
+
+  z-index: 3;
+}
+
+.slider-indicator {
+  width: 30px;
+
+  height: 3px;
+
+  padding: 0;
+
+  border: none;
+
+  background: white;
+
+  opacity: 0.5;
+
+  cursor: pointer;
+}
+
+.slider-indicator.active {
+  opacity: 1;
+}
+
+/* =========================================
+   SECCIÓN AYUDA A BUSCARLOS
+========================================= */
+
+.ayuda-section {
+  width: 100%;
+
+  padding: 35px 20px 50px;
+
+  box-sizing: border-box;
+
+  background: #eef1f4;
+}
+
+.ayuda-section h2 {
+  text-align: center;
+
+  font-size: 28px;
+
+  margin: 0 0 35px;
+
+  color: #20252b;
+
+  font-weight: 700;
+}
+
+/* =========================================
+   CONTENEDOR DE TARJETAS
+========================================= */
+
+.reportes-container {
+  width: 100%;
+
+  max-width: 900px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  gap: 20px;
+
+  align-items: stretch;
+}
+
+/* =========================================
+   TARJETA
+========================================= */
+
+.reporte-card {
+  width: 100%;
+
+  min-width: 0;
+
+  background: white;
+
+  border-radius: 4px;
+
+  overflow: hidden;
+
+  box-sizing: border-box;
+
+  padding: 6px;
+
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.08);
+}
+
+/* =========================================
+   CONTENEDOR DE IMAGEN
+========================================= */
+
+.reporte-imagen-container {
+  width: 100%;
+
+  height: 265px;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  overflow: hidden;
+
+  border-radius: 50%;
+}
+
+/* =========================================
+   IMAGEN
+========================================= */
+
+.reporte-imagen {
+  width: 100%;
+
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  object-position: center;
+}
+
+/* =========================================
+   INFORMACIÓN
+========================================= */
+
+.reporte-info {
+  padding: 12px 10px 15px;
+
+  font-size: 13px;
+
+  line-height: 1.45;
+
+  color: #333;
+}
+
+.reporte-info p {
+  margin: 0 0 9px;
+}
+
+.reporte-info strong {
+  font-weight: 700;
+}
+
+/* =========================================
+   ESTADO
+========================================= */
+
+.estado {
+  display: flex;
+
+  align-items: center;
+
+  gap: 5px;
+}
+
+.estado-rojo,
+.estado-verde {
+  width: 10px;
+
+  height: 10px;
+
+  border-radius: 50%;
+
+  display: inline-block;
+
+  flex-shrink: 0;
+}
+
+.estado-rojo {
+  background: #e74c3c;
+}
+
+.estado-verde {
+  background: #2ecc71;
+}
+
+/* =========================================
+   BOTÓN CONTACTAR
+========================================= */
+
+.btn-contactar {
+  border: none;
+
+  background: #f47a23;
+
+  color: white;
+
+  padding: 8px 12px;
+
+  border-radius: 5px;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  margin-top: 4px;
+}
+
+.btn-contactar:hover {
+  background: #d96515;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+  .reportes-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    max-width: 620px;
+  }
+}
+
+@media (max-width: 650px) {
+  .reportes-slider {
+    height: 480px;
+  }
+
+  .slider-content {
+    width: 80%;
+  }
+
+  .slider-content h1 {
+    font-size: 42px;
+  }
+
+  .slider-content p {
+    font-size: 18px;
+  }
+
+  .slide-reporta .slider-content {
+    width: 70%;
+
+    margin-left: 15%;
+  }
+
+  .slide-reporta .slider-content h1 {
+    font-size: 42px;
+  }
+
+  .slide-reporta .slider-content p {
+    font-size: 17px;
+  }
+
+  .reportes-container {
+    grid-template-columns: 1fr;
+
+    max-width: 350px;
+  }
+
+  .reporte-imagen-container {
+    height: 300px;
+  }
+}

@@ -6,7 +6,7 @@ import Footer from "./components/Footer/Footer";
 
 import Home from "./pages/Home";
 import Adopciones from "./pages/Adopciones";
-//import Reportes from "./pages/Reportes";
+import Reportes from "./pages/Reportes";
 //import Historias from "./pages/Historias";
 
 function App() {
@@ -18,9 +18,9 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/adopciones" element={<Adopciones />} />
 
-        {/* <Route path="/reportes" element={<Reportes />} />
+        <Route path="/reportes" element={<Reportes />} />
 
-        <Route path="/historias" element={<Historias />} /> */}
+        {/* <Route path="/historias" element={<Historias />} /> */}
       </Routes>
       <Footer />
     </>
