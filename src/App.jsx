@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import Adopciones from "./pages/Adopciones";
 import Reportes from "./pages/Reportes";
 import CrearReporte from "./pages/CrearReporte";
+import AcercaDe from "./pages/AcercaDe";
 //import Historias from "./pages/Historias";
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
 
         <Route path="/reportes" element={<Reportes />} />
         <Route path="/crear-reporte" element={<CrearReporte />} />
+        <Route path="/acerca-de" element={<AcercaDe />} />
 
         {/* <Route path="/historias" element={<Historias />} /> */}
       </Routes>

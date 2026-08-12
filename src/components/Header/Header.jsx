@@ -13,7 +13,12 @@ function Header() {
           alt=" Logo Refugio Digital"
           className="logo"
         />
-        <div className="titulo"><img src="https://res.cloudinary.com/dn6wibef0/image/upload/v1761699950/refugio%20digital/logo_2_hcsss4.png" alt="refugio digital" /></div>
+        <div className="titulo">
+          <img
+            src="https://res.cloudinary.com/dn6wibef0/image/upload/v1761699950/refugio%20digital/logo_2_hcsss4.png"
+            alt="refugio digital"
+          />
+        </div>
       </div>
 
       {/* Icono menú móvil */}
@@ -36,7 +41,7 @@ function Header() {
         <Link to="/reportes" onClick={() => setMenuAbierto(false)}>
           Reportes
         </Link>
-        <Link to="/Acerca de" onClick={() => setMenuAbierto(false)}>
+        <Link to="/acerca-de" onClick={() => setMenuAbierto(false)}>
           Acerca de
         </Link>
       </nav>

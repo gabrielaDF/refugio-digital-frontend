@@ -1,0 +1,489 @@
+/* =========================================
+   PÁGINA ACERCA DE
+========================================= */
+
+.acerca-page {
+  width: 100%;
+
+  min-height: 100vh;
+
+  background: #eef1f4;
+
+  padding-bottom: 60px;
+
+  box-sizing: border-box;
+}
+
+/* =========================================
+   ENCABEZADO
+========================================= */
+
+.acerca-header {
+  position: relative;
+
+  width: 100%;
+
+  min-height: 430px;
+
+  background-size: cover;
+
+  background-position: center;
+
+  background-repeat: no-repeat;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+
+  overflow: hidden;
+}
+
+/* =========================================
+   CAPA SOBRE LA IMAGEN
+========================================= */
+
+.acerca-header-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  background: rgba(255, 255, 255, 0.01);
+
+  z-index: 1;
+}
+
+/* =========================================
+   CONTENIDO DEL ENCABEZADO
+========================================= */
+
+.acerca-header-content {
+  position: relative;
+
+  z-index: 2;
+
+  width: 90%;
+
+  max-width: 850px;
+
+  margin: 0 auto;
+}
+
+/* =========================================
+   TÍTULO
+========================================= */
+
+.acerca-header h1 {
+  margin: 0 0 18px;
+
+  color: #eeebeb;
+
+  font-size: 52px;
+
+  font-weight: 800;
+
+  text-shadow: 1px 1px 2px rgba(230, 126, 15, 0.8);
+}
+
+/* =========================================
+   DESCRIPCIÓN
+========================================= */
+
+.acerca-header p {
+  max-width: 750px;
+
+  margin: 0 auto;
+
+  color: #f0eeec;
+
+  font-size: 20px;
+
+  line-height: 1.6;
+
+  font-weight: 600;
+
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+}
+
+/* =========================================
+   MISIÓN Y VISIÓN
+========================================= */
+
+.mision-vision {
+  width: 100%;
+
+  max-width: 1050px;
+
+  margin: 45px auto;
+
+  padding: 0 20px;
+
+  box-sizing: border-box;
+
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 30px;
+}
+
+/* =========================================
+   TARJETAS MISIÓN Y VISIÓN
+========================================= */
+
+.info-card {
+  background: white;
+
+  padding: 35px;
+
+  box-sizing: border-box;
+
+  border-radius: 8px;
+
+  text-align: center;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-4px);
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+}
+
+/* =========================================
+   ICONOS
+========================================= */
+
+.info-icon {
+  width: 65px;
+
+  height: 65px;
+
+  margin: 0 auto 18px;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  border-radius: 50%;
+
+  background: #fff1e7;
+
+  font-size: 30px;
+}
+
+/* =========================================
+   TÍTULOS MISIÓN Y VISIÓN
+========================================= */
+
+.info-card h2 {
+  margin: 0 0 18px;
+
+  color: #f47a23;
+
+  font-size: 30px;
+
+  font-weight: 800;
+}
+
+/* =========================================
+   TEXTO MISIÓN Y VISIÓN
+========================================= */
+
+.info-card p {
+  margin: 0;
+
+  color: #555;
+
+  font-size: 16px;
+
+  line-height: 1.7;
+
+  text-align: justify;
+}
+
+/* =========================================
+   SECCIÓN CONTÁCTANOS
+========================================= */
+
+.contactanos-section {
+  width: 100%;
+
+  max-width: 1050px;
+
+  margin: 0 auto;
+
+  padding: 40px;
+
+  box-sizing: border-box;
+
+  display: grid;
+
+  grid-template-columns: 0.8fr 1.2fr;
+
+  gap: 50px;
+
+  background: white;
+
+  border-radius: 8px;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* =========================================
+   TEXTO DE CONTACTO
+========================================= */
+
+.contactanos-texto {
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+}
+
+.contactanos-texto h2 {
+  margin: 0 0 20px;
+
+  color: #20252b;
+
+  font-size: 34px;
+
+  font-weight: 800;
+}
+
+.contactanos-texto h2::after {
+  content: "";
+
+  display: block;
+
+  width: 80px;
+
+  height: 3px;
+
+  margin-top: 12px;
+
+  background: #f47a23;
+}
+
+.contactanos-texto p {
+  margin: 0 0 15px;
+
+  color: #555;
+
+  font-size: 16px;
+
+  line-height: 1.6;
+}
+
+/* =========================================
+   FORMULARIO
+========================================= */
+
+.contactanos-form {
+  width: 100%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 18px;
+}
+
+/* =========================================
+   CAMPOS
+========================================= */
+
+.campo-contacto {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 7px;
+}
+
+.campo-contacto label {
+  color: #333;
+
+  font-size: 14px;
+
+  font-weight: 700;
+}
+
+/* =========================================
+   INPUTS
+========================================= */
+
+.campo-contacto input,
+.campo-contacto textarea {
+  width: 100%;
+
+  padding: 11px 12px;
+
+  box-sizing: border-box;
+
+  border: 1px solid #d2d6da;
+
+  border-radius: 5px;
+
+  background: white;
+
+  color: #333;
+
+  font-family: inherit;
+
+  font-size: 14px;
+
+  outline: none;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.campo-contacto input:focus,
+.campo-contacto textarea:focus {
+  border-color: #f47a23;
+
+  box-shadow: 0 0 0 2px rgba(244, 122, 35, 0.15);
+}
+
+.campo-contacto textarea {
+  resize: vertical;
+
+  min-height: 120px;
+}
+
+/* =========================================
+   BOTÓN ENVIAR
+========================================= */
+
+.btn-enviar-contacto {
+  align-self: flex-start;
+
+  border: none;
+
+  background: #f47a23;
+
+  color: white;
+
+  padding: 12px 25px;
+
+  border-radius: 6px;
+
+  font-size: 15px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease;
+}
+
+.btn-enviar-contacto:hover {
+  background: #d96515;
+
+  transform: translateY(-2px);
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+  .mision-vision {
+    grid-template-columns: 1fr;
+
+    max-width: 650px;
+  }
+
+  .contactanos-section {
+    grid-template-columns: 1fr;
+
+    max-width: 700px;
+
+    gap: 35px;
+  }
+}
+
+/* =========================================
+   MÓVIL
+========================================= */
+
+@media (max-width: 600px) {
+  .acerca-header {
+    min-height: 360px;
+
+    padding: 40px 20px;
+  }
+
+  .acerca-header h1 {
+    font-size: 36px;
+  }
+
+  .acerca-header p {
+    font-size: 16px;
+  }
+
+  .mision-vision {
+    margin: 30px auto;
+
+    padding: 0 15px;
+
+    gap: 20px;
+  }
+
+  .info-card {
+    padding: 25px 20px;
+  }
+
+  .info-card h2 {
+    font-size: 26px;
+  }
+
+  .info-card p {
+    font-size: 15px;
+  }
+
+  .contactanos-section {
+    margin: 0 15px;
+
+    padding: 25px 20px;
+
+    width: auto;
+  }
+
+  .contactanos-texto h2 {
+    font-size: 29px;
+  }
+
+  .btn-enviar-contacto {
+    width: 100%;
+  }
+}
+
+/* =========================================
+   MÓVILES PEQUEÑOS
+========================================= */
+
+@media (max-width: 400px) {
+  .acerca-header h1 {
+    font-size: 31px;
+  }
+
+  .acerca-header p {
+    font-size: 15px;
+  }
+}
