@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Reportes.css";
 
 const slides = [
@@ -9,7 +10,7 @@ const slides = [
       "Cada reporte aumenta las posibilidades de encontrar una mascota. Comparte la información del caso y permite que más personas se unan a la búsqueda.",
     boton: "Crear Reporte",
     imagen:
-      "https://images.unsplash.com/photo-1558788353-f76d92427f16?auto=format&fit=crop&w=1800&q=85",
+      "https://res.cloudinary.com/dn6wibef0/image/upload/v1761694431/refugio%20digital/reportes_wfdcqa.jpg",
     clase: "slide-reporta",
   },
   {
@@ -19,7 +20,7 @@ const slides = [
       "Explora los casos más recientes de perros y gatos extraviados. Tu ayuda puede marcar la diferencia para que una mascota vuelva al hogar donde la esperan.",
     boton: "Explorar reportes",
     imagen:
-      "https://images.unsplash.com/photo-1558788353-f76d92427f16?auto=format&fit=crop&w=1800&q=85",
+      "https://res.cloudinary.com/dn6wibef0/image/upload/v1761694428/refugio%20digital/login_cflekx.jpg",
     clase: "slide-ver-reportes",
   },
 ];
@@ -79,7 +80,9 @@ function Reportes() {
 
   return (
     <main className="reportes-page">
-      {/* CARRUSEL */}
+      {/* =========================================
+          CARRUSEL
+      ========================================= */}
 
       <section
         className={`reportes-slider ${slides[slideActual].clase}`}
@@ -87,10 +90,10 @@ function Reportes() {
           backgroundImage: `url(${slides[slideActual].imagen})`,
         }}
       >
+        {/* Capa sobre la imagen */}
         <div className="slider-overlay"></div>
 
-        {/* FLECHA IZQUIERDA */}
-
+        {/* Flecha izquierda */}
         <button
           className="slider-arrow slider-arrow-left"
           onClick={anteriorSlide}
@@ -99,8 +102,7 @@ function Reportes() {
           ‹
         </button>
 
-        {/* CONTENIDO */}
-
+        {/* Contenido */}
         <div className="slider-content">
           <h1>{slides[slideActual].titulo}</h1>
 
@@ -108,11 +110,19 @@ function Reportes() {
 
           <p>{slides[slideActual].texto}</p>
 
-          <button className="btn-reportes">{slides[slideActual].boton}</button>
+          {/* Botón del slide */}
+          {slideActual === 0 ? (
+            <Link to="/crear-reporte" className="btn-reportes">
+              Crear Reporte
+            </Link>
+          ) : (
+            <a href="#reportes" className="btn-reportes">
+              Explorar reportes
+            </a>
+          )}
         </div>
 
-        {/* FLECHA DERECHA */}
-
+        {/* Flecha derecha */}
         <button
           className="slider-arrow slider-arrow-right"
           onClick={siguienteSlide}
@@ -121,8 +131,7 @@ function Reportes() {
           ›
         </button>
 
-        {/* INDICADORES */}
-
+        {/* Indicadores */}
         <div className="slider-indicators">
           {slides.map((slide, index) => (
             <button
@@ -137,14 +146,17 @@ function Reportes() {
         </div>
       </section>
 
-      {/* MASCOTAS */}
+      {/* =========================================
+          MASCOTAS REPORTADAS
+      ========================================= */}
 
       <section className="ayuda-section">
         <h2>Ayuda a buscarlos</h2>
 
-        <div className="reportes-container">
+        <div id="reportes" className="reportes-container">
           {reportes.map((reporte) => (
             <article className="reporte-card" key={reporte.id}>
+              {/* Imagen */}
               <div className="reporte-imagen-container">
                 <img
                   src={reporte.imagen}
@@ -153,6 +165,7 @@ function Reportes() {
                 />
               </div>
 
+              {/* Información */}
               <div className="reporte-info">
                 <p>
                   🐾 <strong>{reporte.nombre}</strong>
@@ -189,7 +202,9 @@ function Reportes() {
                   <strong>Estado:</strong> {reporte.estado}
                 </p>
 
-                <button className="btn-contactar">Contactar</button>
+                <button className="btn-contactar" type="button">
+                  Contactar
+                </button>
               </div>
             </article>
           ))}

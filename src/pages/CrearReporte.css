@@ -1,0 +1,235 @@
+/* =========================================
+   CREAR REPORTE
+========================================= */
+
+.crear-reporte {
+  min-height: calc(100vh - 80px);
+
+  background: #eef1f4;
+
+  padding: 45px 20px 60px;
+
+  box-sizing: border-box;
+}
+
+/* =========================================
+   ENCABEZADO
+========================================= */
+
+.formulario-header {
+  text-align: center;
+
+  margin-bottom: 35px;
+}
+
+.formulario-header h1 {
+  margin: 0 0 12px;
+
+  font-size: 42px;
+
+  font-weight: 800;
+
+  color: #20252b;
+}
+
+.formulario-header p {
+  margin: 0 auto;
+
+  max-width: 650px;
+
+  font-size: 18px;
+
+  line-height: 1.5;
+
+  color: #555;
+}
+
+/* =========================================
+   CONTENEDOR
+========================================= */
+
+.formulario-contenedor {
+  width: 100%;
+
+  max-width: 900px;
+
+  margin: 0 auto;
+
+  background: white;
+
+  border-radius: 8px;
+
+  padding: 35px;
+
+  box-sizing: border-box;
+
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* =========================================
+   FORMULARIO
+========================================= */
+
+.reporte-form {
+  width: 100%;
+}
+
+/* =========================================
+   GRID
+========================================= */
+
+.formulario-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 22px 25px;
+}
+
+/* =========================================
+   CAMPOS
+========================================= */
+
+.campo {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 7px;
+}
+
+.campo-completo {
+  grid-column: 1 / -1;
+}
+
+.campo label {
+  font-size: 14px;
+
+  font-weight: 700;
+
+  color: #333;
+}
+
+/* =========================================
+   INPUTS
+========================================= */
+
+.campo input,
+.campo select,
+.campo textarea {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  border: 1px solid #d2d6da;
+
+  border-radius: 5px;
+
+  padding: 11px 12px;
+
+  font-family: inherit;
+
+  font-size: 14px;
+
+  color: #333;
+
+  background: #fff;
+
+  outline: none;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+  border-color: #f47a23;
+
+  box-shadow: 0 0 0 2px rgba(244, 122, 35, 0.15);
+}
+
+.campo textarea {
+  resize: vertical;
+
+  min-height: 120px;
+}
+
+/* =========================================
+   ARCHIVO
+========================================= */
+
+.campo input[type="file"] {
+  padding: 9px;
+
+  cursor: pointer;
+}
+
+/* =========================================
+   BOTÓN
+========================================= */
+
+.formulario-acciones {
+  display: flex;
+
+  justify-content: center;
+
+  margin-top: 32px;
+}
+
+.btn-crear-reporte {
+  border: none;
+
+  background: #f47a23;
+
+  color: white;
+
+  padding: 12px 28px;
+
+  border-radius: 6px;
+
+  font-size: 16px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.btn-crear-reporte:hover {
+  background: #d96515;
+
+  transform: translateY(-2px);
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 700px) {
+  .crear-reporte {
+    padding: 30px 15px 40px;
+  }
+
+  .formulario-header h1 {
+    font-size: 34px;
+  }
+
+  .formulario-header p {
+    font-size: 16px;
+  }
+
+  .formulario-contenedor {
+    padding: 25px 20px;
+  }
+
+  .formulario-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .campo-completo {
+    grid-column: auto;
+  }
+}

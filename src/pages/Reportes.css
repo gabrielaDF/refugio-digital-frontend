@@ -1,7 +1,9 @@
 /* =========================================
    PÁGINA DE REPORTES
 ========================================= */
-
+html {
+  scroll-behavior: smooth;
+}
 .reportes-page {
   width: 100%;
   min-height: 100vh;
@@ -14,6 +16,7 @@
 
 .reportes-slider {
   position: relative;
+
   width: 100%;
   height: 540px;
 
@@ -26,10 +29,13 @@
   overflow: hidden;
 }
 
-/* Capa sobre la imagen */
+/* =========================================
+   CAPA SOBRE LA IMAGEN
+========================================= */
 
 .slider-overlay {
   position: absolute;
+
   inset: 0;
 
   background: rgba(0, 0, 0, 0.3);
@@ -37,10 +43,12 @@
   z-index: 1;
 }
 
-/* Primer slide */
+/* =========================================
+   SLIDE VER REPORTES
+========================================= */
 
 .slide-ver-reportes .slider-overlay {
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0);
 }
 
 /* =========================================
@@ -82,7 +90,7 @@
 }
 
 /* =========================================
-   SEGUNDO SLIDE - REPORTA
+   SLIDE REPORTA
 ========================================= */
 
 .slide-reporta .slider-content {
@@ -109,7 +117,7 @@
 }
 
 /* =========================================
-   LÍNEA DEL PRIMER SLIDE
+   LÍNEA
 ========================================= */
 
 .slider-line {
@@ -123,10 +131,14 @@
 }
 
 /* =========================================
-   BOTÓN
+   BOTÓN CREAR / EXPLORAR REPORTE
 ========================================= */
 
 .btn-reportes {
+  display: inline-block;
+
+  text-decoration: none;
+
   border: none;
 
   background: #f47a23;
@@ -143,13 +155,17 @@
 
   cursor: pointer;
 
-  transition: 0.3s;
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease;
 }
 
 .btn-reportes:hover {
   background: #d96515;
 
   transform: translateY(-2px);
+
+  color: white;
 }
 
 /* =========================================
@@ -169,13 +185,15 @@
 
   border: none;
 
-  color: white;
+  color: orangered;
 
   font-size: 45px;
 
   cursor: pointer;
 
   padding: 10px 25px;
+
+  transition: transform 0.2s ease;
 }
 
 .slider-arrow-left {
@@ -224,6 +242,8 @@
   opacity: 0.5;
 
   cursor: pointer;
+
+  transition: opacity 0.3s ease;
 }
 
 .slider-indicator.active {
@@ -263,7 +283,7 @@
 .reportes-container {
   width: 100%;
 
-  max-width: 900px;
+  max-width: 1100px;
 
   margin: 0 auto;
 
@@ -271,7 +291,7 @@
 
   grid-template-columns: repeat(3, minmax(0, 1fr));
 
-  gap: 20px;
+  gap: 30px;
 
   align-items: stretch;
 }
@@ -287,15 +307,25 @@
 
   background: white;
 
-  border-radius: 4px;
+  border-radius: 8px;
 
   overflow: hidden;
 
   box-sizing: border-box;
 
-  padding: 6px;
+  padding: 8px;
 
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.reporte-card:hover {
+  transform: translateY(-4px);
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
 }
 
 /* =========================================
@@ -305,7 +335,7 @@
 .reporte-imagen-container {
   width: 100%;
 
-  height: 265px;
+  height: 250px;
 
   display: flex;
 
@@ -339,7 +369,7 @@
 ========================================= */
 
 .reporte-info {
-  padding: 12px 10px 15px;
+  padding: 15px 12px 15px;
 
   font-size: 13px;
 
@@ -411,6 +441,8 @@
   cursor: pointer;
 
   margin-top: 4px;
+
+  transition: background 0.3s ease;
 }
 
 .btn-contactar:hover {
@@ -418,24 +450,48 @@
 }
 
 /* =========================================
-   RESPONSIVE
+   TABLET
 ========================================= */
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .reportes-container {
+    max-width: 750px;
+
     grid-template-columns: repeat(2, minmax(0, 1fr));
 
-    max-width: 620px;
+    gap: 25px;
+  }
+
+  .slider-content h1 {
+    font-size: 52px;
+  }
+
+  .slider-content p {
+    font-size: 21px;
+  }
+
+  .slide-reporta .slider-content h1 {
+    font-size: 52px;
   }
 }
+
+/* =========================================
+   MÓVIL
+========================================= */
 
 @media (max-width: 650px) {
   .reportes-slider {
     height: 480px;
   }
 
+  /* Contenido general */
+
   .slider-content {
     width: 80%;
+
+    margin: 0 auto;
+
+    text-align: center;
   }
 
   .slider-content h1 {
@@ -446,10 +502,16 @@
     font-size: 18px;
   }
 
+  /* Slide Reporta */
+
   .slide-reporta .slider-content {
     width: 70%;
 
     margin-left: 15%;
+
+    margin-right: 0;
+
+    text-align: left;
   }
 
   .slide-reporta .slider-content h1 {
@@ -460,13 +522,65 @@
     font-size: 17px;
   }
 
+  /* Tarjetas */
+
   .reportes-container {
     grid-template-columns: 1fr;
 
     max-width: 350px;
+
+    gap: 25px;
   }
 
   .reporte-imagen-container {
     height: 300px;
+  }
+
+  /* Flechas */
+
+  .slider-arrow {
+    font-size: 32px;
+
+    padding: 5px 12px;
+  }
+
+  .slider-arrow-left {
+    left: 5px;
+  }
+
+  .slider-arrow-right {
+    right: 5px;
+  }
+
+  /* Título */
+
+  .ayuda-section h2 {
+    font-size: 24px;
+  }
+}
+
+/* =========================================
+   MÓVILES PEQUEÑOS
+========================================= */
+
+@media (max-width: 400px) {
+  .slider-content h1 {
+    font-size: 34px;
+  }
+
+  .slider-content p {
+    font-size: 16px;
+  }
+
+  .slide-reporta .slider-content h1 {
+    font-size: 34px;
+  }
+
+  .slide-reporta .slider-content p {
+    font-size: 16px;
+  }
+
+  .reporte-imagen-container {
+    height: 270px;
   }
 }
