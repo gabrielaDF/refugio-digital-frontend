@@ -1,0 +1,45 @@
+.auth-nav-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 9px 20px;
+  border-radius: 999px;
+  background: linear-gradient(160deg, #f9a825 0%, #ef5a1f 100%);
+  color: #fff;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+  box-shadow: 0 6px 14px rgba(233, 83, 30, 0.3);
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.auth-nav-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(233, 83, 30, 0.38);
+}
+
+.auth-nav-btn:active {
+  transform: translateY(0);
+}
+
+.auth-nav-btn--account {
+  background: #fff;
+  color: #ef5a1f;
+  border: 2px solid #ef5a1f;
+  box-shadow: none;
+}
+
+.auth-nav-btn--account:hover {
+  background: #fff3ec;
+}
+
+@media (max-width: 480px) {
+  .auth-nav-btn {
+    padding: 8px 16px;
+    font-size: 13px;
+  }
+}

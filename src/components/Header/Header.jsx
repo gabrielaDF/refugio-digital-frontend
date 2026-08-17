@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import AuthNavButton from "./AuthNavButton";
 import "./Header.css";
 
 function Header() {
@@ -44,6 +45,9 @@ function Header() {
         <Link to="/acerca-de" onClick={() => setMenuAbierto(false)}>
           Acerca de
         </Link>
+
+        {/* Botón de login / mi cuenta, visible también dentro del menú móvil */}
+        <AuthNavButton onNavigate={() => setMenuAbierto(false)} />
       </nav>
     </header>
   );

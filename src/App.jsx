@@ -9,7 +9,8 @@ import Adopciones from "./pages/Adopciones";
 import Reportes from "./pages/Reportes";
 import CrearReporte from "./pages/CrearReporte";
 import AcercaDe from "./pages/AcercaDe";
-//import Historias from "./pages/Historias";
+import AuthForm from "./pages/AuthForm";
+//import Blog from "./pages/Blog";
 
 function App() {
   return (
@@ -19,12 +20,11 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/adopciones" element={<Adopciones />} />
-
         <Route path="/reportes" element={<Reportes />} />
         <Route path="/crear-reporte" element={<CrearReporte />} />
         <Route path="/acerca-de" element={<AcercaDe />} />
-
-        {/* <Route path="/historias" element={<Historias />} /> */}
+        <Route path="/login" element={<AuthForm />} />
+        {/* <Route path="/Blog" element={<Blog />} /> */}
       </Routes>
       <Footer />
     </>
