@@ -584,3 +584,391 @@ html {
     height: 270px;
   }
 }
+/* =========================================
+   BLOQUE 1 - ¿CÓMO AYUDAR?
+========================================= */
+
+.bloque-como-ayudar {
+  width: 100%;
+
+  min-height: 330px;
+
+  padding: 55px 12%;
+
+  box-sizing: border-box;
+
+  background: #eef1f4;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 70px;
+}
+
+/* IMAGEN */
+
+.bloque-como-ayudar-imagen {
+  width: 500px;
+
+  height: 500px;
+
+  flex-shrink: 0;
+
+  overflow: hidden;
+}
+
+.bloque-como-ayudar-imagen img {
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+}
+
+/* TEXTO */
+
+.bloque-como-ayudar-texto {
+  max-width: 600px;
+
+  text-align: center;
+}
+
+.bloque-como-ayudar-texto h2 {
+  margin: 0 0 20px;
+
+  color: #20252b;
+
+  font-size: 30px;
+
+  font-weight: 800;
+}
+
+.bloque-como-ayudar-texto p {
+  margin: 0;
+
+  color: #333;
+
+  font-size: 16px;
+
+  line-height: 1.55;
+
+  text-align: justify;
+}
+
+/* =========================================
+   BLOQUE 2 - ¡EMPIEZA AQUÍ!
+========================================= */
+
+.bloque-empieza {
+  width: 100%;
+
+  min-height: 330px;
+
+  padding: 45px 12%;
+
+  box-sizing: border-box;
+
+  background: #f6a313;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  overflow: hidden;
+}
+
+/* TEXTO */
+
+.bloque-empieza-texto {
+  max-width: 600px;
+
+  color: white;
+}
+
+.bloque-empieza-texto h2 {
+  margin: 0 0 20px;
+
+  font-size: 32px;
+
+  font-weight: 800;
+}
+
+.bloque-empieza-texto p {
+  margin: 0 0 15px;
+
+  font-size: 16px;
+
+  line-height: 1.5;
+}
+
+.bloque-empieza-texto ul {
+  margin: 0;
+
+  padding-left: 22px;
+}
+
+.bloque-empieza-texto li {
+  margin-bottom: 12px;
+
+  font-size: 15px;
+
+  line-height: 1.5;
+}
+
+/* IMAGEN */
+
+.bloque-empieza-imagen {
+  width: 400px;
+
+  height: auto;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: flex-end;
+
+  justify-content: center;
+}
+
+.bloque-empieza-imagen img {
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: contain;
+
+  display: block;
+
+  transition: background 0.3s ease;
+}
+
+/* =========================================
+   BLOQUE 3 - ¿CUÁL ES EL PROCESO?
+========================================= */
+
+.bloque-proceso {
+  width: 100%;
+
+  padding: 55px 12% 60px;
+
+  box-sizing: border-box;
+
+  background: #eef1f4;
+}
+
+.bloque-proceso > h2 {
+  margin: 0 0 45px;
+
+  text-align: center;
+
+  color: #20252b;
+
+  font-size: 30px;
+
+  font-weight: 800;
+}
+
+/* CONTENIDO */
+
+.bloque-proceso-contenido {
+  max-width: 1000px;
+
+  margin: 0 auto;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 55px;
+}
+
+/* =========================================
+   IMÁGENES
+========================================= */
+
+.bloque-proceso-imagenes {
+  width: 320px;
+
+  height: 280px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  gap: 10px;
+}
+
+.proceso-imagen-grande {
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+  border-radius: 5px;
+
+  display: block;
+}
+
+/* =========================================
+   TEXTO
+========================================= */
+
+.bloque-proceso-texto {
+  flex: 1;
+}
+
+.bloque-proceso-texto p {
+  margin: 0 0 18px;
+
+  color: #333;
+
+  font-size: 15px;
+
+  line-height: 1.55;
+
+  text-align: justify;
+}
+
+.bloque-proceso-texto p:last-child {
+  margin-bottom: 0;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+  .bloque-como-ayudar {
+    padding: 45px 7%;
+
+    gap: 40px;
+  }
+
+  .bloque-empieza {
+    padding: 45px 7%;
+  }
+
+  .bloque-proceso {
+    padding: 50px 7%;
+  }
+
+  .bloque-proceso-contenido {
+    gap: 35px;
+  }
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 700px) {
+  .bloque-como-ayudar {
+    flex-direction: column;
+
+    padding: 45px 25px;
+
+    gap: 30px;
+  }
+
+  .bloque-como-ayudar-texto p {
+    text-align: center;
+  }
+
+  .bloque-empieza {
+    flex-direction: column;
+
+    padding: 45px 25px;
+
+    text-align: center;
+
+    gap: 20px;
+  }
+
+  .bloque-empieza-texto ul {
+    text-align: left;
+  }
+
+  .bloque-proceso-contenido {
+    flex-direction: column;
+  }
+
+  .bloque-proceso-imagenes {
+    width: 100%;
+
+    max-width: 350px;
+  }
+
+  .bloque-proceso-texto {
+    width: 100%;
+  }
+}
+
+/* =========================================
+   MÓVIL
+========================================= */
+
+@media (max-width: 500px) {
+  .bloque-como-ayudar {
+    padding: 35px 20px;
+  }
+
+  .bloque-como-ayudar-imagen {
+    width: 180px;
+
+    height: 180px;
+  }
+
+  .bloque-como-ayudar-texto h2 {
+    font-size: 27px;
+  }
+
+  .bloque-como-ayudar-texto p {
+    font-size: 14px;
+  }
+
+  .bloque-empieza {
+    padding: 40px 20px;
+  }
+
+  .bloque-empieza-texto h2 {
+    font-size: 28px;
+  }
+
+  .bloque-empieza-texto p,
+  .bloque-empieza-texto li {
+    font-size: 14px;
+  }
+
+  .bloque-empieza-imagen {
+    width: 230px;
+
+    height: 220px;
+  }
+
+  .bloque-proceso {
+    padding: 40px 20px;
+  }
+
+  .bloque-proceso > h2 {
+    font-size: 27px;
+
+    margin-bottom: 30px;
+  }
+
+  .bloque-proceso-imagenes {
+    height: 240px;
+  }
+
+  .bloque-proceso-texto p {
+    font-size: 14px;
+  }
+}

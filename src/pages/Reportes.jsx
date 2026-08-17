@@ -147,6 +147,99 @@ function Reportes() {
       </section>
 
       {/* =========================================
+          BLOQUE 1 - ¿CÓMO AYUDAR?
+      ========================================= */}
+
+      <section className="bloque-como-ayudar">
+        <div className="bloque-como-ayudar-imagen">
+          <img
+            src="https://res.cloudinary.com/dn6wibef0/image/upload/v1786751881/Sin_t%C3%ADtulo-2_ji197o.png"
+            alt="Persona ayudando a un perro"
+          />
+        </div>
+
+        <div className="bloque-como-ayudar-texto">
+          <h2>¿Cómo ayudar?</h2>
+
+          <p>
+            Sabemos que puede ser complicado saber exactamente qué hacer cuando
+            encuentras a un animal en no muy buenas condiciones, por eso, con
+            tan solo contactarnos, nuestro equipo se dirigirá al lugar en donde
+            esté el pequeño y se encargará de llevarlo a donde pueda tener los
+            cuidados necesarios.
+          </p>
+        </div>
+      </section>
+
+      {/* =========================================
+          BLOQUE 2 - ¡EMPIEZA AQUÍ!
+      ========================================= */}
+
+      <section className="bloque-empieza">
+        <div className="bloque-empieza-texto">
+          <h2>¡Empieza aquí!</h2>
+
+          <p>A continuación te dejamos las opciones de reporte:</p>
+
+          <ul>
+            <li>
+              Para reporte inmediato, llama a este número
+              <strong> (1234567890)</strong>
+            </li>
+
+            <li>
+              Para dar registro del reporte, dale click al botón{" "}
+              <strong>“Empezar”</strong> y llena el formulario.
+            </li>
+          </ul>
+        </div>
+
+        <div className="bloque-empieza-imagen">
+          <Link to="/crear-reporte">
+            <img
+              src="https://res.cloudinary.com/dn6wibef0/image/upload/v1786751881/Sin_t%C3%ADtulo-1_fs2gtk.png"
+              alt="Perro"
+            />
+          </Link>
+        </div>
+      </section>
+
+      {/* =========================================
+          BLOQUE 3 - ¿CUÁL ES EL PROCESO?
+      ========================================= */}
+
+      <section className="bloque-proceso">
+        <h2>¿Cuál es el proceso?</h2>
+
+        <div className="bloque-proceso-contenido">
+          <div className="bloque-proceso-imagenes">
+            <img
+              className="proceso-imagen-grande"
+              src="https://res.cloudinary.com/dn6wibef0/image/upload/v1786751882/Sin_t%C3%ADtulo-3_rjfoof.png"
+              alt="Animales"
+            />
+          </div>
+
+          <div className="bloque-proceso-texto">
+            <p>
+              ¿Te interesa saber cuál es el proceso? te lo explicamos. Una vez
+              haces el reporte, nuestro equipo se encarga de revisar al animal
+              para verificar su condición y acto seguido se lleva a una
+              veterinaria para darle atención médica si se requiere. Luego nos
+              enfocamos en su aseo, alimentación y cuidado hasta que alguien
+              decida adoptarlo.
+            </p>
+
+            <p>
+              Siempre procuramos tener en cuenta su bienestar y comodidad hasta
+              que llegue su próximo dueño. El objetivo es brindarles un lugar
+              seguro en donde puedan sentirse a salvo.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* =========================================
           MASCOTAS REPORTADAS
       ========================================= */}
 
