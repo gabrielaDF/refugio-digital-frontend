@@ -7,7 +7,6 @@ import Reportes from "./pages/Reportes";
 import CrearReporte from "./pages/CrearReporte";
 import AcercaDe from "./pages/AcercaDe";
 import AuthForm from "./pages/AuthForm";
-//import Blog from "./pages/Blog";
 
 function App() {
   return (
@@ -21,7 +20,6 @@ function App() {
         <Route path="/crear-reporte" element={<CrearReporte />} />
         <Route path="/acerca-de" element={<AcercaDe />} />
         <Route path="/login" element={<AuthForm />} />
-        {/* <Route path="/Blog" element={<Blog />} /> */}
       </Routes>
       <Footer />
     </>
